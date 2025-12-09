@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MSE Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>MSE Interactive — 5 Questions</h1>
+    </header>
+
+    <main>
+      <section class="controls">
+        <label for="qSelect">Question:</label>
+        <select id="qSelect"></select>
+        <button id="prevBtn">◀ Prev</button>
+        <button id="nextBtn">Next ▶</button>
+      </section>
+
+      <section class="content">
+        <div class="graph-area">
+          <svg id="graph" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet"></svg>
+          <div id="tooltip" class="tooltip" style="display:none"></div>
+          <div id="pointControls" class="point-controls"></div>
+        </div>
+
+        <aside class="sidebar">
+          <div><strong>Equation</strong></div>
+          <div id="equation" class="equation">--</div>
+
+          <div class="question-text" id="questionText"></div>
+
+          <button id="revealBtn" class="reveal">Reveal Answer</button>
+
+          <div id="solution" class="solution" aria-live="polite"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
