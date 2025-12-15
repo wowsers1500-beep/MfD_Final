@@ -15,34 +15,27 @@ const questions = [
   {
     id:1,
     title:'Q1 — Horizontal (3 pts)',
-    model:{type:'horizontal', c:2},
-    pts:[{x:1,y:3.2},{x:2,y:1.2},{x:3,y:3.5}],
-    text:'Compute the Mean Squared Error (MSE) of the model y = 2 for the plotted points.'
-  },
-  {
-    id:2,
-    title:'Q2 — Horizontal (3 pts)',
     model:{type:'horizontal', c:-1},
     pts:[{x:0,y:-2.2},{x:1,y:1.0},{x:2,y:-0.2}],
     text:'Compute the MSE of the model y = -1 for the plotted points.'
   },
   {
-    id:3,
-    title:'Q3 — Linear (3 pts)',
+    id:2,
+    title:'Q2 — Linear (3 pts)',
     model:{type:'linear', m:0.5, b:1},
     pts:[{x:0,y:2.0},{x:2,y:0.8},{x:4,y:4.8}],
     text:'Compute the MSE of the model y = 0.5x + 1 for the plotted points.'
   },
   {
-    id:4,
-    title:'Q4 — Linear (4 pts)',
+    id:3,
+    title:'Q3 — Linear (4 pts)',
     model:{type:'linear', m:-0.8, b:3},
     pts:[{x:0,y:4.0},{x:1,y:0.8},{x:2,y:2.5},{x:3,y:0.0}],
     text:'Compute the MSE of the model y = -0.8x + 3 for the plotted points.'
   },
   {
-    id:5,
-    title:'Q5 — Parabola (4 pts)',
+    id:4,
+    title:'Q4 — Parabola (4 pts)',
     model:{type:'parabola', a:0.5, b:-1, c:1},
     pts:[{x:-1,y:4.0},{x:0,y:-0.5},{x:1,y:1.8},{x:2,y:4.5}],
     text:'Compute the MSE of the model y = 0.5x^2 - x + 1 for the plotted points.'
